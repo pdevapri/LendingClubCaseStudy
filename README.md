@@ -1,5 +1,6 @@
-# Project Name
-> Outline a brief description of your project.
+# Lending club Case Study
+> This case study is about analysing the data set and identifying the driving factors for risky loan applicants(i.e the defaulters who have not paid the loan for a long time) . So that the such loan to risky applicants can be reduced thereby cutting down the amount of credit loss
+
 
 
 ## Table of Contents
@@ -8,45 +9,51 @@
 * [Conclusions](#conclusions)
 * [Acknowledgements](#acknowledgements)
 
-<!-- You can include any other section that is pertinent to your problem -->
+
 
 ## General Information
-- Provide general information about your project here.
-- What is the background of your project?
-- What is the business probem that your project is trying to solve?
-- What is the dataset that is being used?
+The consumer finance company receives a loan application, the company has to make a decision for loan approval based on the applicant’s profile. Two types of risks are associated with the bank’s decision:
+•	If the applicant is likely to repay the loan, then not approving the loan results in a loss of business to the company
+•	If the applicant is not likely to repay the loan, i.e. he/she is likely to default, then approving the loan may lead to a financial loss for the company
 
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+The dataset contains contains the information about past loan applicants and whether they ‘defaulted’ or not. 
+
+The aim of the case study is to identify patterns which indicate if a person is likely to default, which may be used for taking actions such as denying the loan, reducing the amount of loan, lending (to risky applicants) at a higher interest rate, etc.
+
+
 
 ## Conclusions
-- Conclusion 1 from the analysis
-- Conclusion 2 from the analysis
-- Conclusion 3 from the analysis
-- Conclusion 4 from the analysis
+Below are the major driving factors for loan default as per my analysis:
 
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+- Lower Annual income (default percentage is maximum for annual income <20000)
+- Purpose of loan is “Small Business”
+- High Interest Rate (>24%)
+- Term of loan is 60 months
+- Home ownership is ‘Rent’ or ‘Mortgage’
+- Revolving utilization rate above 90%
+- Employment term <=1 
+- Public record bankruptcies >=2
+- Applicants paying late fee 
+- Grade G and F applicants (subgrades of F and G)
 
 
 ## Technologies Used
-- library - version 1.0
-- library - version 2.0
-- library - version 3.0
+- Data Understanding using the Data Dictionary
+- Data Ceaning 
+- Univariate Analysis
+- Segmented Univariate Analysis
+- Bivariate Analysis
 
-<!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
+Versions:
+- jupyter @ file:///C:/ci/jupyter_1607685287094/work
+- ipykernel @ file:///C:/ci/ipykernel_1633545585502/work/dist/ipykernel-6.4.1-py3-none-any.whl
+- pandas @ file:///C:/ci/pandas_1635506685681/work
+- numpy @ file:///C:/ci/numpy_and_numpy_base_1626271900803/work
+- seaborn @ file:///tmp/build/80754af9/seaborn_1629307859561/work
+- matplotlib @ file:///C:/ci/matplotlib-suite_1634667159685/work
 
 ## Acknowledgements
-Give credit here.
-- This project was inspired by...
-- References if any...
-- This project was based on [this tutorial](https://www.example.com).
+- This project was an assignment from Upgrad
+- [https://www.learn.Upgrad.com](https://www.learn.Upgrad.com).
 
 
-## Contact
-Created by [@githubusername] - feel free to contact me!
-
-
-<!-- Optional -->
-<!-- ## License -->
-<!-- This project is open source and available under the [... License](). -->
-
-<!-- You don't have to include all sections - just the one's relevant to your project -->
